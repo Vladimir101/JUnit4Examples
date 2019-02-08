@@ -1,3 +1,6 @@
+// add VM argument
+// --illegal-access=deny
+// in Run configuration in Eclipse
 package com.junit4.examples;
 
 import org.assertj.core.api.SoftAssertions;
