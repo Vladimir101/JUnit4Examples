@@ -18,6 +18,8 @@ public class HamcrestAssertions
 		assertThat(sum, greaterThan(0));
 		assertThat(sum, is(greaterThan(1)));
 		
+		assertThat(2 == 2, is(true));
+		
 		String str = "White-box testing";
 		assertThat(str, containsString("White"));
 		assertThat(str, startsWith("White"));
