@@ -1,38 +1,54 @@
 package com.junit4.examples;
 
-import static org.junit.Assert.*;
-
 import org.junit.After;
 import org.junit.AfterClass;
 import org.junit.Before;
 import org.junit.BeforeClass;
+import org.junit.Ignore;
 import org.junit.Test;
 
 public class Template
 {
 	@BeforeClass
-	public static void setUpBeforeClass()
+	public static void oneTimeSetUp()
 	{
+		System.out.println("@BeforeClass - oneTimeSetUp");
 	}
 
 	@Before
-	public void setUp() throws Exception
+	public void setUp()
 	{
+		System.out.println("@Before - setUp");
 	}
 
 	@Test
-	public void test()
+	public void test1()
 	{
-		fail("Not yet implemented");
+		System.out.println("test1");
 	}
 
-	@After
-	public void tearDown() throws Exception
+	@Test
+	public void test2()
 	{
+		System.out.println("test2");
+	}
+	
+	@Ignore
+	@Test
+	public void test3()
+	{
+		System.out.println("test1");
+	}
+	
+	@After
+	public void tearDown()
+	{
+		System.out.println("@After - tearDown");
 	}
 
 	@AfterClass
-	public static void tearDownAfterClass()
+	public static void oneTimeTearDown()
 	{
+		System.out.println("@AfterClass - oneTimeTearDown");
 	}
 }
