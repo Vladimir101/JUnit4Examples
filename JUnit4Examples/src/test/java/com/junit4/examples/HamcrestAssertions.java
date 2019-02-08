@@ -3,6 +3,7 @@ package com.junit4.examples;
 
 import static org.junit.Assert.*;
 import org.junit.Test;
+// type this import
 import static org.hamcrest.Matchers.*;
 
 public class HamcrestAssertions
