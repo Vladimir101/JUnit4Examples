@@ -11,7 +11,7 @@ public class AssertionsJUnit4
 		String x = "Hello";
 		String y = " world";
 		assertEquals("Hello world", x + y);
-		assertEquals(2, 1 + 1);
+		assertEquals("Sum 1 + 1 is not 2", 2, 1 + 1);
 		assertEquals(2.0, Math.sqrt(4), 1e-10);
 		assertTrue(2 > 1);
 		assertFalse(1 > 2);
